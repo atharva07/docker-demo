@@ -1,2 +1,7 @@
 /home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/main/java/com/atharvahiwase07/pages/flightregistration/RegistrationPage.java
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/main/java/com/atharvahiwase07/pages/flightregistration/FlightSearchPage.java
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/main/java/com/atharvahiwase07/pages/AbstractPage.java
 /home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/main/java/com/atharvahiwase07/pages/flightregistration/Main.java
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/main/java/com/atharvahiwase07/pages/flightregistration/RegistrationConfirmationPage.java
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/main/java/com/atharvahiwase07/pages/flightregistration/FlightConfirmationPage.java
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/main/java/com/atharvahiwase07/pages/flightregistration/FlightsSelectionPage.java
