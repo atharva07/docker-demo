@@ -10,14 +10,24 @@ import com.atharvahiwase07.pages.flightregistration.FlightSearchPage;
 import com.atharvahiwase07.pages.flightregistration.FlightsSelectionPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationConfirmationPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationPage;
+import org.testng.annotations.Parameters;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.Assert;
 
 public class FlightReservationTest {
     private WebDriver driver;
+    private String noOfPassengers;
+    private String expectedPrice;
+
 
     @BeforeTest
-    public void setDriver() {
+    @Parameters({"noOfPassengers", "expectedPrice"})
+    public void setDriver(String noOfPassengers, String expectedPrice) {
+        this.noOfPassengers = noOfPassengers;
+        this.expectedPrice = expectedPrice;
+
+        // this is the driver setup
         WebDriverManager.chromedriver().driverVersion("119.0.6045.105").setup();
         this.driver = new ChromeDriver();
     }
@@ -26,6 +36,7 @@ public class FlightReservationTest {
     public void userRegistrationTest() {
         RegistrationPage registrationPage = new RegistrationPage(driver);
         registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html");
+        driver.manage().window().maximize();
         Assert.assertTrue(registrationPage.isAt());
 
         registrationPage.enterUserDetails("Selenium", "Docker");
@@ -47,7 +58,7 @@ public class FlightReservationTest {
         FlightSearchPage flightSearchPage = new FlightSearchPage(driver);
         Assert.assertTrue(flightSearchPage.isAt());
 
-        flightSearchPage.selectPassengers("2");
+        flightSearchPage.selectPassengers(noOfPassengers);
         flightSearchPage.searchFlights();
     }
 
@@ -63,7 +74,7 @@ public class FlightReservationTest {
     public void flightReservationConfirmationTest() {
         FlightConfirmationPage flightConfirmationPage = new FlightConfirmationPage(driver);
         Assert.assertTrue(flightConfirmationPage.isAt());
-        Assert.assertEquals(flightConfirmationPage.getPrice(), "$1169 USD");
+        Assert.assertEquals(flightConfirmationPage.getPrice(), expectedPrice);
     }
 
     @AfterTest

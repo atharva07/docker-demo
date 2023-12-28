@@ -1,0 +1,9 @@
+<suite>
+    <test name="passengers-count-1">
+        <parameters name="noOfPassengers" value="1" />
+        <parameters name="expectedPrice" value="$584 USD" />
+        <classes>
+            <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
+        </classes>
+    </test>
+</suite>
