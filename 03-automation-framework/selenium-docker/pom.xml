@@ -32,11 +32,11 @@
         </dependency>
         <!-- logging library -->
         <!-- https://www.baeldung.com/logback -->
-        <dependency>
+        <!-- <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
-        </dependency>
+        </dependency> -->
         <!-- web-driver manager for local testing -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
