@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.atharvahiwase07.pages.AbstractPage;
 
 public class RegistrationConfirmationPage extends AbstractPage {
-    @FindBy(id = "go-to-flight-search")
+    @FindBy(id = "go-to-flights-search")
     private WebElement goToFlightSearchButton;
 
     public RegistrationConfirmationPage(WebDriver driver) {

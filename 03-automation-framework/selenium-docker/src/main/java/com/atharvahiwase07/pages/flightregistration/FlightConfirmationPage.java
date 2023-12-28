@@ -12,10 +12,10 @@ public class FlightConfirmationPage extends AbstractPage {
 
     private static final Logger log = LoggerFactory.getLogger(FlightConfirmationPage.class);
 
-    @FindBy(name = "#flights-confirmation-section .card-body .row:nth-child(3) .col:nth-child(2)")
+    @FindBy(css = "#flights-confirmation-section .card-body .row:nth-child(1) .col:nth-child(2)")
     private WebElement flightConfirmationElement;
 
-    @FindBy(name = "#flights-confirmation-section .card-body .row:nth-child(1) .col:nth-child(2)")
+    @FindBy(css = "#flights-confirmation-section .card-body .row:nth-child(3) .col:nth-child(2)")
     private WebElement totalPrice;
 
     public FlightConfirmationPage(WebDriver driver) {

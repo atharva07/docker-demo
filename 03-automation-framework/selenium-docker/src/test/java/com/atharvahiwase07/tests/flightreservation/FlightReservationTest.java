@@ -18,7 +18,7 @@ public class FlightReservationTest {
 
     @BeforeTest
     public void setDriver() {
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().driverVersion("119.0.6045.105").setup();
         this.driver = new ChromeDriver();
     }
     
@@ -63,7 +63,7 @@ public class FlightReservationTest {
     public void flightReservationConfirmationTest() {
         FlightConfirmationPage flightConfirmationPage = new FlightConfirmationPage(driver);
         Assert.assertTrue(flightConfirmationPage.isAt());
-        Assert.assertEquals(flightConfirmationPage.getPrice(), "1169 USD");
+        Assert.assertEquals(flightConfirmationPage.getPrice(), "$1169 USD");
     }
 
     @AfterTest
