@@ -3,11 +3,10 @@ package com.atharvahiwase07.pages.flightregistration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import com.atharvahiwase07.pages.AbstractPage;
 
-public class RegistrationPage {
-
-    private WebDriver driver;
+public class RegistrationPage extends AbstractPage {
 
     @FindBy(id = "firstName")
     private WebElement firstNameInput;
@@ -34,8 +33,13 @@ public class RegistrationPage {
     private WebElement registerButton;
 
     public RegistrationPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
+    }
+
+    @Override
+    public boolean isAt() {
+        this.wait.until(ExpectedConditions.visibilityOf(this.firstNameInput));
+        return this.firstNameInput.isDisplayed();
     }
 
     public void goTo(String url) {
