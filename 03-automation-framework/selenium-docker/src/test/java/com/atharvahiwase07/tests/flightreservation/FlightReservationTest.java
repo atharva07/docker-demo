@@ -5,15 +5,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.atharvahiwase07.pages.flightregistration.FlightConfirmationPage;
 import com.atharvahiwase07.pages.flightregistration.FlightSearchPage;
 import com.atharvahiwase07.pages.flightregistration.FlightsSelectionPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationConfirmationPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationPage;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import org.testng.Assert;
 
 public class FlightReservationTest {
