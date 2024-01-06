@@ -20,7 +20,12 @@ public class FlightReservationTest {
     private String noOfPassengers;
     private String expectedPrice;
 
-
+    // Once we are done with scripting the test file execute the test with the folllowing commands.
+    // Open the terminal.
+    // go to the location of the pom.xml file
+    // hit the command mvn clean test
+    // check the reports in the target folder of the project.
+    // dont forget to push the code.
     @BeforeTest
     @Parameters({"noOfPassengers" ,"expectedPrice"})
     public void setDriver(String noOfPassengers, String expectedPrice) {
