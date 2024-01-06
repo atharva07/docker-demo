@@ -22,7 +22,7 @@ public class FlightReservationTest {
 
 
     @BeforeTest
-    @Parameters({"noOfPassengers", "expectedPrice"})
+    @Parameters({"noOfPassengers" ,"expectedPrice"})
     public void setDriver(String noOfPassengers, String expectedPrice) {
         this.noOfPassengers = noOfPassengers;
         this.expectedPrice = expectedPrice;
@@ -57,7 +57,6 @@ public class FlightReservationTest {
     public void flightsSearchTest() {
         FlightSearchPage flightSearchPage = new FlightSearchPage(driver);
         Assert.assertTrue(flightSearchPage.isAt());
-
         flightSearchPage.selectPassengers(noOfPassengers);
         flightSearchPage.searchFlights();
     }

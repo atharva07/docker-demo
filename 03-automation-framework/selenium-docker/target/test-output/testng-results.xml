@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-29T20:30:54 IST" name="flight-reservation" finished-at="2023-12-29T20:31:12 IST" duration-ms="18613">
+    <groups>
+    </groups>
+    <test started-at="2023-12-29T20:30:54 IST" name="passengers-count-1" finished-at="2023-12-29T20:31:03 IST" duration-ms="9904">
+      <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver(java.lang.String,java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@222545dc]" started-at="2023-12-29T20:30:54 IST" name="setDriver" finished-at="2023-12-29T20:30:56 IST" duration-ms="2637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$584 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@222545dc]" started-at="2023-12-29T20:30:56 IST" name="userRegistrationTest" finished-at="2023-12-29T20:30:59 IST" duration-ms="2807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@222545dc]" started-at="2023-12-29T20:30:59 IST" name="registrationConfirmationTest" finished-at="2023-12-29T20:31:00 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightsSearchTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@222545dc]" started-at="2023-12-29T20:31:00 IST" name="flightsSearchTest" finished-at="2023-12-29T20:31:01 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@222545dc]" started-at="2023-12-29T20:31:01 IST" name="flightSelectionTest" finished-at="2023-12-29T20:31:02 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.flightsSearchTest" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@222545dc]" started-at="2023-12-29T20:31:02 IST" name="flightReservationConfirmationTest" finished-at="2023-12-29T20:31:03 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="1765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@222545dc]" started-at="2023-12-29T20:31:03 IST" name="quitDriver" finished-at="2023-12-29T20:31:03 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.atharvahiwase07.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-1 -->
+    <test started-at="2023-12-29T20:31:04 IST" name="passengers-count-2" finished-at="2023-12-29T20:31:12 IST" duration-ms="8523">
+      <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest">
+        <test-method is-config="true" signature="setDriver(java.lang.String,java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@18078bef]" started-at="2023-12-29T20:31:04 IST" name="setDriver" finished-at="2023-12-29T20:31:05 IST" duration-ms="1199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1169 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method signature="userRegistrationTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@18078bef]" started-at="2023-12-29T20:31:05 IST" name="userRegistrationTest" finished-at="2023-12-29T20:31:07 IST" duration-ms="2489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistrationTest -->
+        <test-method signature="registrationConfirmationTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@18078bef]" started-at="2023-12-29T20:31:07 IST" name="registrationConfirmationTest" finished-at="2023-12-29T20:31:08 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.userRegistrationTest" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationConfirmationTest -->
+        <test-method signature="flightsSearchTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@18078bef]" started-at="2023-12-29T20:31:08 IST" name="flightsSearchTest" finished-at="2023-12-29T20:31:09 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.registrationConfirmationTest" duration-ms="851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightsSearchTest -->
+        <test-method signature="flightSelectionTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@18078bef]" started-at="2023-12-29T20:31:09 IST" name="flightSelectionTest" finished-at="2023-12-29T20:31:11 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.flightsSearchTest" duration-ms="1953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSelectionTest -->
+        <test-method signature="flightReservationConfirmationTest()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@18078bef]" started-at="2023-12-29T20:31:11 IST" name="flightReservationConfirmationTest" finished-at="2023-12-29T20:31:12 IST" depends-on-methods="com.atharvahiwase07.tests.flightreservation.FlightReservationTest.flightSelectionTest" duration-ms="1182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightReservationConfirmationTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.flightreservation.FlightReservationTest@18078bef]" started-at="2023-12-29T20:31:12 IST" name="quitDriver" finished-at="2023-12-29T20:31:12 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.atharvahiwase07.tests.flightreservation.FlightReservationTest -->
+    </test> <!-- passengers-count-2 -->
+  </suite> <!-- flight-reservation -->
+</testng-results>
