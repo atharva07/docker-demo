@@ -11,7 +11,7 @@ public class RegistrationPage extends AbstractPage {
     @FindBy(id = "firstName")
     private WebElement firstNameInput;
 
-    @FindBy(id = "lastName")
+    @FindBy(id = "lastName")    
     private WebElement lastNameInput;
 
     @FindBy(id = "email")
