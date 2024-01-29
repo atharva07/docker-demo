@@ -15,4 +15,20 @@
             <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
         </classes>
     </test>
+
+    <test name="passengers-count-3">
+        <parameter name="noOfPassengers" value="3" />
+        <parameter name="expectedPrice" value="$1753 USD" />
+        <classes>
+            <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
+        </classes>
+    </test>
+
+    <test name="passengers-count-4">
+        <parameter name="noOfPassengers" value="4" />
+        <parameter name="expectedPrice" value="$2338 USD" />
+        <classes>
+            <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
+        </classes>
+    </test>
 </suite>
