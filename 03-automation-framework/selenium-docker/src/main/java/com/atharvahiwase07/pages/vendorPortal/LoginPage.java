@@ -27,12 +27,13 @@ public class LoginPage extends AbstractPage {
         return this.userName.isDisplayed();
     }
 
+    public void goTo(String url) {
+        this.driver.get(url);
+    }
+
     public void loginPage(String username, String password) {
         this.userName.sendKeys(username);
         this.passWord.sendKeys(password);
-    }    
-
-    public void login() {
         this.loginButton.click();
-    }
+    }  
 }
