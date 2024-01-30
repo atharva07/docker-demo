@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="vendorPortal" parallel="tests">
+    <test name="passengers-count-1">
+        <parameter name="noOfPassengers" value="1" />
+        <parameter name="expectedPrice" value="$584 USD" />
+        <classes>
+            <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
+        </classes>
+    </test>
+</suite>

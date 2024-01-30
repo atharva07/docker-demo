@@ -82,6 +82,7 @@
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                        <!-- <suiteXmlFile>src/test/resources/test-suites/flight-reservation.xml</suiteXmlFile> -->
+                        <!-- <file>src/test/resources/test-suites/flight-reservation.xml</file> -->
                         <file>src/test/resources/test-suites/flight-reservation.xml</file>
                     </suiteXmlFiles>
                     <threadCount>1</threadCount>

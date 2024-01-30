@@ -31,7 +31,7 @@ public class LoginPage extends AbstractPage {
         this.driver.get(url);
     }
 
-    public void loginPage(String username, String password) {
+    public void login(String username, String password) {
         this.userName.sendKeys(username);
         this.passWord.sendKeys(password);
         this.loginButton.click();
