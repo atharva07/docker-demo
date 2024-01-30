@@ -1,8 +1,4 @@
 package com.atharvahiwase07.tests.flightreservation;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.atharvahiwase07.pages.flightregistration.FlightConfirmationPage;
@@ -10,13 +6,12 @@ import com.atharvahiwase07.pages.flightregistration.FlightSearchPage;
 import com.atharvahiwase07.pages.flightregistration.FlightsSelectionPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationConfirmationPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationPage;
+import com.atharvahiwase07.tests.AbstractTest;
 import org.testng.annotations.Parameters;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.Assert;
 
-public class FlightReservationTest {
-    private WebDriver driver;
+public class FlightReservationTest extends AbstractTest{
+    
     private String noOfPassengers;
     private String expectedPrice;
 
@@ -28,13 +23,13 @@ public class FlightReservationTest {
     // dont forget to push the code.
     @BeforeTest
     @Parameters({"noOfPassengers" ,"expectedPrice"})
-    public void setDriver(String noOfPassengers, String expectedPrice) {
+    public void setParameters(String noOfPassengers, String expectedPrice) {
         this.noOfPassengers = noOfPassengers;
         this.expectedPrice = expectedPrice;
 
         // this is the driver setup
-        WebDriverManager.chromedriver().driverVersion("119.0.6045.105").setup();
-        this.driver = new ChromeDriver();
+        //WebDriverManager.chromedriver().driverVersion("119.0.6045.105").setup();
+        //this.driver = new ChromeDriver();
     }
     
     @Test
@@ -79,10 +74,5 @@ public class FlightReservationTest {
         FlightConfirmationPage flightConfirmationPage = new FlightConfirmationPage(driver);
         Assert.assertTrue(flightConfirmationPage.isAt());
         Assert.assertEquals(flightConfirmationPage.getPrice(), expectedPrice);
-    }
-
-    @AfterTest
-    public void quitDriver() {
-        driver.quit();
     }
 }

@@ -3,5 +3,7 @@ com/atharvahiwase07/pages/flightregistration/FlightConfirmationPage.class
 com/atharvahiwase07/pages/flightregistration/RegistrationConfirmationPage.class
 com/atharvahiwase07/pages/flightregistration/FlightsSelectionPage.class
 com/atharvahiwase07/pages/flightregistration/Main.class
+com/atharvahiwase07/pages/vendorPortal/LoginPage.class
 com/atharvahiwase07/pages/flightregistration/RegistrationPage.class
 com/atharvahiwase07/pages/AbstractPage.class
+com/atharvahiwase07/pages/vendorPortal/DashboardPage.class
