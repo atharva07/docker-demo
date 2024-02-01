@@ -1,3 +1,6 @@
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/test/java/com/atharvahiwase07/tests/vendorPortal/model/VendorPortalTestData.java
 /home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/test/java/com/atharvahiwase07/tests/flightreservation/FlightReservationTest.java
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/test/java/com/atharvahiwase07/utils/ResourceLoader.java
 /home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/test/java/com/atharvahiwase07/tests/AbstractTest.java
 /home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/test/java/com/atharvahiwase07/tests/vendorPortal/VendorPortalTest.java
+/home/taxidriver/docker-udemy/workspace/03-automation-framework/selenium-docker/src/test/java/com/atharvahiwase07/utils/JsonUtil.java

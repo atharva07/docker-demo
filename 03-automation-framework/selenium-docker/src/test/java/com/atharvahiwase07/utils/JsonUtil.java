@@ -18,6 +18,5 @@ public class JsonUtil {
             log.error("urable to read test data {}", path, e);
         }
         return null;
-
     }
 }

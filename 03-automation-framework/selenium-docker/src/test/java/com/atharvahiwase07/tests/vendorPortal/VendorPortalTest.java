@@ -2,19 +2,25 @@ package com.atharvahiwase07.tests.vendorPortal;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.atharvahiwase07.pages.vendorPortal.DashboardPage;
 import com.atharvahiwase07.pages.vendorPortal.LoginPage;
 import com.atharvahiwase07.tests.AbstractTest;
+import com.atharvahiwase07.tests.vendorPortal.model.VendorPortalTestData;
+import com.atharvahiwase07.utils.JsonUtil;
 
 public class VendorPortalTest extends AbstractTest {
     private LoginPage loginPage;
     private DashboardPage dashboardPage;
+    private VendorPortalTestData testData;
 
     @BeforeTest
-    public void setPageObjects(){
+    @Parameters("testDataPath")
+    public void setPageObjects(String testDataPath){
         this.loginPage = new LoginPage(driver);
         this.dashboardPage = new DashboardPage(driver);
+        this.testData = JsonUtil.getTestData(testDataPath);
     }
     
     @Test
@@ -22,7 +28,7 @@ public class VendorPortalTest extends AbstractTest {
         loginPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html");
         driver.manage().window().maximize();
         Assert.assertTrue(loginPage.isAt());
-        loginPage.login("sam", "sam");
+        loginPage.login(testData.username(), testData.password());
     }
 
     @Test(dependsOnMethods = "loginTest")
@@ -30,15 +36,14 @@ public class VendorPortalTest extends AbstractTest {
         Assert.assertTrue(dashboardPage.isAt());
 
         // finance metrics
-        Assert.assertEquals(dashboardPage.getMonthlyEarning(), "$40,000");
-        Assert.assertEquals(dashboardPage.getAnnualEarning(), "$215,000");
-        Assert.assertEquals(dashboardPage.getProfitMargin(), "50%");
-        Assert.assertEquals(dashboardPage.getAvailableInventory(), "18");
-
+        Assert.assertEquals(dashboardPage.getMonthlyEarning(), testData.monthlyEarning());
+        Assert.assertEquals(dashboardPage.getAnnualEarning(), testData.annualEarning());
+        Assert.assertEquals(dashboardPage.getProfitMargin(), testData.profitMargin());
+        Assert.assertEquals(dashboardPage.getAvailableInventory(), testData.availableInventory());
 
         // order history search
-        dashboardPage.searchOrderHistoryBy("adams");
-        Assert.assertEquals(dashboardPage.getSearchResultsCount(), 8);
+        dashboardPage.searchOrderHistoryBy(testData.searchKeyword());
+        Assert.assertEquals(dashboardPage.getSearchResultsCount(), testData.searchResultsCount());
     }
 
     @Test(dependsOnMethods = "dashboardTest")

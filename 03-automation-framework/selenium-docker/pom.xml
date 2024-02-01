@@ -30,12 +30,24 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.java.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.2.2</version>
+        </dependency>
+
+         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.0.0-jre</version>
+        </dependency>
         <!-- logging library -->
         <!-- https://www.baeldung.com/logback -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
+            <version>1.4.14</version>
         </dependency>
         <!-- web-driver manager for local testing -->
         <dependency>
@@ -83,7 +95,7 @@
                     <suiteXmlFiles>
                        <!-- <suiteXmlFile>src/test/resources/test-suites/flight-reservation.xml</suiteXmlFile> -->
                         <!-- <file>src/test/resources/test-suites/flight-reservation.xml</file> -->
-                        <file>src/test/resources/test-suites/flight-reservation.xml</file>
+                        <file>src/test/resources/test-suites/vendor-portal.xml</file>
                     </suiteXmlFiles>
                     <threadCount>1</threadCount>
                     <reportsDirectory>target/test-output</reportsDirectory>
