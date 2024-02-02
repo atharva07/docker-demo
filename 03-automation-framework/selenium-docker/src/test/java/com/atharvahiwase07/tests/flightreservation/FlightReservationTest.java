@@ -7,14 +7,15 @@ import com.atharvahiwase07.pages.flightregistration.FlightsSelectionPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationConfirmationPage;
 import com.atharvahiwase07.pages.flightregistration.RegistrationPage;
 import com.atharvahiwase07.tests.AbstractTest;
+import com.atharvahiwase07.tests.flightreservation.model.FlightReservationTestData;
+import com.atharvahiwase07.utils.JsonUtil;
+
 import org.testng.annotations.Parameters;
 import org.testng.Assert;
 
 public class FlightReservationTest extends AbstractTest{
-    
-    private String noOfPassengers;
-    private String expectedPrice;
 
+    private FlightReservationTestData testData;
     // Once we are done with scripting the test file execute the test with the folllowing commands.
     // Open the terminal.
     // go to the location of the pom.xml file
@@ -22,14 +23,13 @@ public class FlightReservationTest extends AbstractTest{
     // check the reports in the target folder of the project.
     // dont forget to push the code.
     @BeforeTest
-    @Parameters({"noOfPassengers" ,"expectedPrice"})
-    public void setParameters(String noOfPassengers, String expectedPrice) {
-        this.noOfPassengers = noOfPassengers;
-        this.expectedPrice = expectedPrice;
+    @Parameters("testDataPath")
+    public void setParameters(String testDataPath) {
 
         // this is the driver setup
         //WebDriverManager.chromedriver().driverVersion("119.0.6045.105").setup();
         //this.driver = new ChromeDriver();
+        this.testData = JsonUtil.getTestData(testDataPath, FlightReservationTestData.class);
     }
     
     @Test
@@ -39,9 +39,9 @@ public class FlightReservationTest extends AbstractTest{
         driver.manage().window().maximize();
         Assert.assertTrue(registrationPage.isAt());
 
-        registrationPage.enterUserDetails("Selenium", "Docker");
-        registrationPage.enterUserCredentials("selenium@docker.com", "docker");
-        registrationPage.enterAddress("123 non main street", "Newe York", "17223");
+        registrationPage.enterUserDetails(testData.firstname(), testData.lastname());
+        registrationPage.enterUserCredentials(testData.email(), testData.password());
+        registrationPage.enterAddress(testData.street(), testData.city(), testData.zip());
         registrationPage.register();   
     }
 
@@ -49,6 +49,7 @@ public class FlightReservationTest extends AbstractTest{
     public void registrationConfirmationTest() {
         RegistrationConfirmationPage registrationConfirmationPage = new RegistrationConfirmationPage(driver);
         Assert.assertTrue(registrationConfirmationPage.isAt());
+        Assert.assertEquals(registrationConfirmationPage.getFirstName(), testData.firstname());
         registrationConfirmationPage.gotoflightSearch();
     }
 
@@ -56,7 +57,7 @@ public class FlightReservationTest extends AbstractTest{
     public void flightsSearchTest() {
         FlightSearchPage flightSearchPage = new FlightSearchPage(driver);
         Assert.assertTrue(flightSearchPage.isAt());
-        flightSearchPage.selectPassengers(noOfPassengers);
+        flightSearchPage.selectPassengers(testData.passengerCount());
         flightSearchPage.searchFlights();
     }
 
@@ -72,6 +73,6 @@ public class FlightReservationTest extends AbstractTest{
     public void flightReservationConfirmationTest() {
         FlightConfirmationPage flightConfirmationPage = new FlightConfirmationPage(driver);
         Assert.assertTrue(flightConfirmationPage.isAt());
-        Assert.assertEquals(flightConfirmationPage.getPrice(), expectedPrice);
+        Assert.assertEquals(flightConfirmationPage.getPrice(), testData.expectedPrice());
     }
 }
