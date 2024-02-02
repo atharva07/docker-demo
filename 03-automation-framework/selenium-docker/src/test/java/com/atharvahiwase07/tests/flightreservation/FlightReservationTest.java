@@ -49,7 +49,6 @@ public class FlightReservationTest extends AbstractTest{
     public void registrationConfirmationTest() {
         RegistrationConfirmationPage registrationConfirmationPage = new RegistrationConfirmationPage(driver);
         Assert.assertTrue(registrationConfirmationPage.isAt());
-
         registrationConfirmationPage.gotoflightSearch();
     }
 
