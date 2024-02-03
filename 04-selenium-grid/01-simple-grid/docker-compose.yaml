@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  hub:
+    image: selenium/hub:4.16
+    ports: 
+    - 4444:4444
+    - 4442:4442
+    - 4443:4443
+  alpine:
+    image: alpine
+    entrypoint: "ping nginx"
+    depends_on:   
+    - nginx
