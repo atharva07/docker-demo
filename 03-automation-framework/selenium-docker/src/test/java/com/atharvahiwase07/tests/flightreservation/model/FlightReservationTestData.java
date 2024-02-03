@@ -1,8 +1,9 @@
 package com.atharvahiwase07.tests.flightreservation.model;
 
-public record FlightReservationTestData(String firstname, String lastname,
+public record FlightReservationTestData(String firstName, String lastName,
                                         String email, String password,
                                         String street, String city,
                                         String zip, String passengerCount,
                                         String expectedPrice) {
+                                            
 }

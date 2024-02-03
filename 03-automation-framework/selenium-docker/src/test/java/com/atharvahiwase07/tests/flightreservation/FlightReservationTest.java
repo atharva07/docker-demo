@@ -25,10 +25,6 @@ public class FlightReservationTest extends AbstractTest{
     @BeforeTest
     @Parameters("testDataPath")
     public void setParameters(String testDataPath) {
-
-        // this is the driver setup
-        //WebDriverManager.chromedriver().driverVersion("119.0.6045.105").setup();
-        //this.driver = new ChromeDriver();
         this.testData = JsonUtil.getTestData(testDataPath, FlightReservationTestData.class);
     }
     
@@ -38,8 +34,8 @@ public class FlightReservationTest extends AbstractTest{
         registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html");
         driver.manage().window().maximize();
         Assert.assertTrue(registrationPage.isAt());
-
-        registrationPage.enterUserDetails(testData.firstname(), testData.lastname());
+        System.out.println(testData.firstName());
+        registrationPage.enterUserDetails(testData.firstName(), testData.lastName());
         registrationPage.enterUserCredentials(testData.email(), testData.password());
         registrationPage.enterAddress(testData.street(), testData.city(), testData.zip());
         registrationPage.register();   
@@ -49,7 +45,7 @@ public class FlightReservationTest extends AbstractTest{
     public void registrationConfirmationTest() {
         RegistrationConfirmationPage registrationConfirmationPage = new RegistrationConfirmationPage(driver);
         Assert.assertTrue(registrationConfirmationPage.isAt());
-        Assert.assertEquals(registrationConfirmationPage.getFirstName(), testData.firstname());
+        Assert.assertEquals(registrationConfirmationPage.getFirstName(), testData.firstName());
         registrationConfirmationPage.gotoflightSearch();
     }
 

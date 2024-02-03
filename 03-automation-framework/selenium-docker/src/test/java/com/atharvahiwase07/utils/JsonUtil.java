@@ -15,7 +15,7 @@ public class JsonUtil {
         try(InputStream stream = ResourceLoader.getResource(path)) {
             return mapper.readValue(stream, type);
         } catch (Exception e) {
-            log.error("urable to read test data {}", path, e);
+            log.error("unable to read test data {}", path, e);
         }
         return null;
     }

@@ -1,6 +1,7 @@
+com/atharvahiwase07/tests/flightreservation/model/FlightReservationTestData.class
+com/atharvahiwase07/tests/vendorPortal/model/VendorPortalTestData.class
+com/atharvahiwase07/tests/AbstractTest.class
 com/atharvahiwase07/utils/JsonUtil.class
 com/atharvahiwase07/utils/ResourceLoader.class
 com/atharvahiwase07/tests/vendorPortal/VendorPortalTest.class
-com/atharvahiwase07/tests/vendorPortal/model/VendorPortalTestData.class
-com/atharvahiwase07/tests/AbstractTest.class
 com/atharvahiwase07/tests/flightreservation/FlightReservationTest.class

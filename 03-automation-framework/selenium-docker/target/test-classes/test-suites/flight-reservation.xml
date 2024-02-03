@@ -10,8 +10,6 @@
     </test>
 
     <test name="passengers-count-2">
-        <!-- <parameter name="noOfPassengers" value="2" /> -->
-        <!-- <parameter name="expectedPrice" value="$1169 USD" /> -->
         <parameter name="testDataPath" value="test-data/flight-reservation/passenger-2.json" />
         <classes>
             <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
@@ -19,8 +17,6 @@
     </test>
 
     <test name="passengers-count-3">
-        <!-- <parameter name="noOfPassengers" value="3" /> -->
-        <!-- <parameter name="expectedPrice" value="$1753 USD" /> -->
         <parameter name="testDataPath" value="test-data/flight-reservation/passenger-3.json" />
         <classes>
             <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
@@ -28,8 +24,6 @@
     </test>
 
     <test name="passengers-count-4">
-        <!-- <parameter name="noOfPassengers" value="4" /> -->
-        <!-- <parameter name="expectedPrice" value="$2338 USD" /> -->
         <parameter name="testDataPath" value="test-data/flight-reservation/passenger-4.json" />
         <classes>
             <class name="com.atharvahiwase07.tests.flightreservation.FlightReservationTest" />
