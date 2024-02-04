@@ -91,12 +91,15 @@
                 <configuration>
                     <systemPropertyVariables>
                         <browser>chrome</browser>
+                        <selenium.grid.enabled>true</selenium.grid.enabled>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-                       <!-- <suiteXmlFile>src/test/resources/test-suites/flight-reservation.xml</suiteXmlFile> -->
+                        <!-- <suiteXmlFile>src/test/resources/test-suites/flight-reservation.xml</suiteXmlFile> -->
                         <file>src/test/resources/test-suites/flight-reservation.xml</file>
                         <!-- <file>src/test/resources/test-suites/vendor-portal.xml</file> -->
+                        <!-- <file>test-suite.xml</file> -->
                     </suiteXmlFiles>
+                    <parallel>tests</parallel>
                     <threadCount>1</threadCount>
                     <reportsDirectory>target/test-output</reportsDirectory>
                 </configuration>
