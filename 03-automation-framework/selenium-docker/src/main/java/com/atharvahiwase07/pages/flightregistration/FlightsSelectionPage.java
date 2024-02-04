@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.atharvahiwase07.pages.AbstractPage;
 
-import io.netty.util.internal.ThreadLocalRandom;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class FlightsSelectionPage extends AbstractPage {
 

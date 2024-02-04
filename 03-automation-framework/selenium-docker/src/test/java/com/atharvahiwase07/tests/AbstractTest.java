@@ -16,10 +16,14 @@ public abstract class AbstractTest {
     protected WebDriver driver;
 
     @BeforeTest
-    public void setDriver() throws MalformedURLException {
+    public void setDriver() {
         if(Boolean.getBoolean("selenium.grid.enabled"))
         {
-            this.driver = getRemoteDriver();
+            try {
+                this.driver = getRemoteDriver();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
         } else {
             this.driver = getLocalDriver();
         }
