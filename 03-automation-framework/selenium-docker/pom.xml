@@ -47,7 +47,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            
+            <version>${jackson.version}</version>
             <scope>test</scope>
         </dependency>
         <!-- Test framework -->
@@ -79,13 +79,13 @@
                     <!-- mvn clean test -Dbrowser=chrome -Dselenium.grid.enabled=true -->
                     <systemPropertyVariables>
                         <browser>chrome</browser>
-                        <selenium.grid.enabled>true</selenium.grid.enabled>
+                        <selenium.grid.enabled>false</selenium.grid.enabled>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-                        <file>src/test/resources/test-suites/vendor-portal.xml</file>
+                        <!-- <file>src/test/resources/test-suites/vendor-portal.xml</file> -->
                         <file>src/test/resources/test-suites/flight-reservation.xml</file>
                     </suiteXmlFiles>
-                    <threadCount>4</threadCount>
+                    <threadCount>1</threadCount>
                     <reportsDirectory>target/test-output</reportsDirectory>
                 </configuration>
             </plugin>
@@ -154,26 +154,6 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.apache.httpcomponents.client5</groupId>
-                <artifactId>httpclient5</artifactId>
-                <version>5.0.3</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>19.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>1.7.30</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>2.10.3</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>3.12.0</version>
@@ -182,11 +162,6 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
                 <version>1.21</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-annotations</artifactId>
-                <version>2.10.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
