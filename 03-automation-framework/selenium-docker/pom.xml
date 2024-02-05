@@ -11,9 +11,9 @@
     <properties>
         <selenium.java.version>4.16.0</selenium.java.version>
         <logback.version>1.4.14</logback.version>
-        <webdriver.manager.version>5.4.0</webdriver.manager.version>
-        <testng.version>7.8.0</testng.version>
-        <jackson.version>2.12.0</jackson.version>
+        <webdriver.manager.version>5.6.3</webdriver.manager.version>
+        <testng.version>7.9.0</testng.version>
+        <jackson.version>2.16.1</jackson.version>
         <!-- plugins versions -->
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <maven.dependency.version>3.6.0</maven.dependency.version>
@@ -23,24 +23,11 @@
         <!-- output directory -->
         <package.directory>${project.build.directory}/docker-resources</package.directory>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.java.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.inject</groupId>
-            <artifactId>guice</artifactId>
-            <version>4.2.2</version>
-        </dependency>
-
-         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>33.0.0-jre</version>
         </dependency>
         <!-- logging library -->
         <!-- https://www.baeldung.com/logback -->
@@ -60,7 +47,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
+            
             <scope>test</scope>
         </dependency>
         <!-- Test framework -->
@@ -80,7 +67,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.version}</version>
                 <configuration>
-                    <release>21</release>
+                    <release>17</release>
                 </configuration>
             </plugin>
             <!-- To run the tests using specific parameters, change thread count, testng report output directory etc -->
@@ -89,17 +76,16 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
+                    <!-- mvn clean test -Dbrowser=chrome -Dselenium.grid.enabled=true -->
                     <systemPropertyVariables>
                         <browser>chrome</browser>
                         <selenium.grid.enabled>true</selenium.grid.enabled>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
-                        <!-- <suiteXmlFile>src/test/resources/test-suites/flight-reservation.xml</suiteXmlFile> -->
+                        <file>src/test/resources/test-suites/vendor-portal.xml</file>
                         <file>src/test/resources/test-suites/flight-reservation.xml</file>
-                        <!-- <file>src/test/resources/test-suites/vendor-portal.xml</file> -->
-                        <!-- <file>test-suite.xml</file> -->
                     </suiteXmlFiles>
-                    <threadCount>1</threadCount>
+                    <threadCount>4</threadCount>
                     <reportsDirectory>target/test-output</reportsDirectory>
                 </configuration>
             </plugin>
@@ -164,5 +150,44 @@
             </plugin>
         </plugins>
     </build>
-
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.httpcomponents.client5</groupId>
+                <artifactId>httpclient5</artifactId>
+                <version>5.0.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>19.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.10.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>1.21</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.10.3</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

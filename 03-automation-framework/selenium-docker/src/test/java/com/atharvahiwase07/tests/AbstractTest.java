@@ -29,7 +29,6 @@ public abstract class AbstractTest {
         }
     }
 
-    @SuppressWarnings("deprecation")
     private WebDriver getRemoteDriver() throws MalformedURLException {
         Capabilities capabilities;
         if(System.getProperty("browser").equalsIgnoreCase("chrome"))
