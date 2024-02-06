@@ -78,8 +78,8 @@
                 <configuration>
                     <!-- mvn clean test -Dbrowser=chrome -Dselenium.grid.enabled=true -->
                     <systemPropertyVariables>
-                        <!-- <browser>chrome</browser> -->
-                        <selenium.grid.enabled>true</selenium.grid.enabled>
+                        <browser>chrome</browser>
+                        <selenium.grid.enabled>false</selenium.grid.enabled>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                         <!-- <file>src/test/resources/test-suites/vendor-portal.xml</file> -->

@@ -18,7 +18,8 @@ public abstract class AbstractTest {
 
     @BeforeTest
     @Parameters({"browser"})
-    public void setDriver(String browser) {
+    public void setDriver(String browser) 
+    {
         if(Boolean.getBoolean("selenium.grid.enabled"))
         {
             try {
@@ -33,8 +34,9 @@ public abstract class AbstractTest {
 
     private WebDriver getRemoteDriver(String browser) throws MalformedURLException {
         Capabilities capabilities;
-        //if(System.getProperty("browser").equalsIgnoreCase("chrome"))
-        if(browser.equalsIgnoreCase("chrome"))
+        if(System.getProperty("browser").equalsIgnoreCase("chrome"))
+        // below commented code if for cross browser testing, if you want to use another different browser for different test cases.
+        //if(browser.equalsIgnoreCase("chrome"))
         {
             capabilities = new ChromeOptions();
         } else {
