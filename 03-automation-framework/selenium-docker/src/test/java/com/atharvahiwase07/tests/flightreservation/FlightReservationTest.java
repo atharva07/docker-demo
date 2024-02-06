@@ -8,6 +8,8 @@ import com.atharvahiwase07.pages.flightregistration.RegistrationConfirmationPage
 import com.atharvahiwase07.pages.flightregistration.RegistrationPage;
 import com.atharvahiwase07.tests.AbstractTest;
 import com.atharvahiwase07.tests.flightreservation.model.FlightReservationTestData;
+import com.atharvahiwase07.utils.Config;
+import com.atharvahiwase07.utils.Constants;
 import com.atharvahiwase07.utils.JsonUtil;
 
 import org.testng.annotations.Parameters;
@@ -31,7 +33,7 @@ public class FlightReservationTest extends AbstractTest{
     @Test
     public void userRegistrationTest() {
         RegistrationPage registrationPage = new RegistrationPage(driver);
-        registrationPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/reservation-app/index.html");
+        registrationPage.goTo(Config.get(Constants.FLIGHT_RESERVATION_URL));
         driver.manage().window().maximize();
         Assert.assertTrue(registrationPage.isAt());
         System.out.println(testData.firstName());

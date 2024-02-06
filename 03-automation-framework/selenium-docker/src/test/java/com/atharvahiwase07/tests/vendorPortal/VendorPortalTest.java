@@ -8,6 +8,8 @@ import com.atharvahiwase07.pages.vendorPortal.DashboardPage;
 import com.atharvahiwase07.pages.vendorPortal.LoginPage;
 import com.atharvahiwase07.tests.AbstractTest;
 import com.atharvahiwase07.tests.vendorPortal.model.VendorPortalTestData;
+import com.atharvahiwase07.utils.Config;
+import com.atharvahiwase07.utils.Constants;
 import com.atharvahiwase07.utils.JsonUtil;
 
 public class VendorPortalTest extends AbstractTest {
@@ -25,7 +27,7 @@ public class VendorPortalTest extends AbstractTest {
     
     @Test
     public void loginTest() {
-        loginPage.goTo("https://d1uh9e7cu07ukd.cloudfront.net/selenium-docker/vendor-app/index.html");
+        loginPage.goTo(Config.get(Constants.VENDOR_PORTAL_URL));
         driver.manage().window().maximize();
         Assert.assertTrue(loginPage.isAt());
         loginPage.login(testData.username(), testData.password());

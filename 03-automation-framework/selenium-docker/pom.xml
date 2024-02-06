@@ -78,7 +78,7 @@
                 <configuration>
                     <!-- mvn clean test -Dbrowser=chrome -Dselenium.grid.enabled=true -->
                     <systemPropertyVariables>
-                        <browser>firefox</browser>
+                        <browser>chrome</browser>
                         <selenium.grid.enabled>true</selenium.grid.enabled>
                     </systemPropertyVariables>
                     <suiteXmlFiles>
