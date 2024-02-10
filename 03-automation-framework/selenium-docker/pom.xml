@@ -122,11 +122,14 @@
                         <goals>
                             <goal>test-jar</goal>
                         </goals>
+                        <configuration>
+                            <includes>**/*.class</includes>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
             <!-- To copy resources into the output directory -->
-            <!-- <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>${maven.resources.plugin}</version>
@@ -147,7 +150,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin> -->
+            </plugin>
         </plugins>
     </build>
     
