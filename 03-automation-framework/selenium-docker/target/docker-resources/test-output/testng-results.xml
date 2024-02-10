@@ -2,81 +2,23 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-10T19:45:49 IST" name="vendor-portal" finished-at="2024-02-10T19:46:12 IST" duration-ms="23510">
+  <suite started-at="2024-02-10T23:35:19 IST" name="vendor-portal" finished-at="2024-02-10T23:36:17 IST" duration-ms="57968">
     <groups>
     </groups>
-    <test started-at="2024-02-10T19:45:49 IST" name="user-john" finished-at="2024-02-10T19:46:11 IST" duration-ms="21729">
+    <test started-at="2024-02-10T23:35:19 IST" name="user-sam" finished-at="2024-02-10T23:35:39 IST" duration-ms="20065">
       <class name="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest">
-        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:45:49 IST" name="setUpConfig" finished-at="2024-02-10T19:45:49 IST" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpConfig -->
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:45:49 IST" name="setDriver" finished-at="2024-02-10T19:45:50 IST" duration-ms="1472" status="PASS">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:19 IST" name="setDriver" finished-at="2024-02-10T23:35:22 IST" duration-ms="2394" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1a245833]]>
+                <![CDATA[org.testng.TestRunner@4d1bf319]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:45:50 IST" name="setPageObjects" finished-at="2024-02-10T19:45:51 IST" depends-on-methods="com.atharvahiwase07.tests.AbstractTest.setDriver" duration-ms="467" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test-data/vendor-portal/john.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setPageObjects -->
-        <test-method signature="loginTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:45:51 IST" name="loginTest" finished-at="2024-02-10T19:45:54 IST" duration-ms="2762" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:45:54 IST" name="sleep" finished-at="2024-02-10T19:45:59 IST" duration-ms="5014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sleep -->
-        <test-method signature="dashboardTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:45:59 IST" name="dashboardTest" finished-at="2024-02-10T19:45:59 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.loginTest" duration-ms="399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dashboardTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:45:59 IST" name="sleep" finished-at="2024-02-10T19:46:04 IST" duration-ms="5011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sleep -->
-        <test-method signature="logoutTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:46:04 IST" name="logoutTest" finished-at="2024-02-10T19:46:05 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.dashboardTest" duration-ms="1415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:46:05 IST" name="sleep" finished-at="2024-02-10T19:46:10 IST" duration-ms="5010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sleep -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T19:46:10 IST" name="quitDriver" finished-at="2024-02-10T19:46:11 IST" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.atharvahiwase07.tests.vendorPortal.VendorPortalTest -->
-    </test> <!-- user-john -->
-    <test started-at="2024-02-10T19:45:49 IST" name="user-sam" finished-at="2024-02-10T19:46:11 IST" duration-ms="22403">
-      <class name="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest">
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:45:49 IST" name="setDriver" finished-at="2024-02-10T19:45:52 IST" duration-ms="3311" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@6f01b95f]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:45:52 IST" name="setPageObjects" finished-at="2024-02-10T19:45:52 IST" depends-on-methods="com.atharvahiwase07.tests.AbstractTest.setDriver" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:22 IST" name="setPageObjects" finished-at="2024-02-10T23:35:22 IST" depends-on-methods="com.atharvahiwase07.tests.AbstractTest.setDriver" duration-ms="233" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,50 +29,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPageObjects -->
-        <test-method signature="loginTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:45:52 IST" name="loginTest" finished-at="2024-02-10T19:45:54 IST" duration-ms="1770" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:22 IST" name="loginTest" finished-at="2024-02-10T23:35:23 IST" duration-ms="927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:45:54 IST" name="sleep" finished-at="2024-02-10T19:45:59 IST" duration-ms="5001" status="PASS">
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:23 IST" name="sleep" finished-at="2024-02-10T23:35:28 IST" duration-ms="5014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sleep -->
-        <test-method signature="dashboardTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:45:59 IST" name="dashboardTest" finished-at="2024-02-10T19:45:59 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.loginTest" duration-ms="330" status="PASS">
+        <test-method signature="dashboardTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:28 IST" name="dashboardTest" finished-at="2024-02-10T23:35:28 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.loginTest" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:45:59 IST" name="sleep" finished-at="2024-02-10T19:46:04 IST" duration-ms="5001" status="PASS">
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:28 IST" name="sleep" finished-at="2024-02-10T23:35:33 IST" duration-ms="5002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sleep -->
-        <test-method signature="logoutTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:46:04 IST" name="logoutTest" finished-at="2024-02-10T19:46:06 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.dashboardTest" duration-ms="1772" status="PASS">
+        <test-method signature="logoutTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:33 IST" name="logoutTest" finished-at="2024-02-10T23:35:34 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.dashboardTest" duration-ms="1025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:46:06 IST" name="sleep" finished-at="2024-02-10T19:46:11 IST" duration-ms="5012" status="PASS">
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:34 IST" name="sleep" finished-at="2024-02-10T23:35:39 IST" duration-ms="5007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sleep -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T19:46:11 IST" name="quitDriver" finished-at="2024-02-10T19:46:11 IST" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@36916eb0]" started-at="2024-02-10T23:35:39 IST" name="quitDriver" finished-at="2024-02-10T23:35:39 IST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.atharvahiwase07.tests.vendorPortal.VendorPortalTest -->
     </test> <!-- user-sam -->
-    <test started-at="2024-02-10T19:45:49 IST" name="user-mike" finished-at="2024-02-10T19:46:12 IST" duration-ms="23510">
+    <test started-at="2024-02-10T23:35:39 IST" name="user-mike" finished-at="2024-02-10T23:35:59 IST" duration-ms="19501">
       <class name="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest">
-        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:45:49 IST" name="setDriver" finished-at="2024-02-10T19:45:53 IST" duration-ms="4233" status="PASS">
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:39 IST" name="setDriver" finished-at="2024-02-10T23:35:41 IST" duration-ms="1071" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4007f65e]]>
+                <![CDATA[org.testng.TestRunner@6f53b8a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:45:53 IST" name="setPageObjects" finished-at="2024-02-10T19:45:53 IST" depends-on-methods="com.atharvahiwase07.tests.AbstractTest.setDriver" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:41 IST" name="setPageObjects" finished-at="2024-02-10T23:35:41 IST" depends-on-methods="com.atharvahiwase07.tests.AbstractTest.setDriver" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,35 +83,93 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPageObjects -->
-        <test-method signature="loginTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:45:53 IST" name="loginTest" finished-at="2024-02-10T19:45:54 IST" duration-ms="1159" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:41 IST" name="loginTest" finished-at="2024-02-10T23:35:42 IST" duration-ms="1984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:45:54 IST" name="sleep" finished-at="2024-02-10T19:45:59 IST" duration-ms="5004" status="PASS">
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:42 IST" name="sleep" finished-at="2024-02-10T23:35:48 IST" duration-ms="5003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sleep -->
-        <test-method signature="dashboardTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:45:59 IST" name="dashboardTest" finished-at="2024-02-10T19:46:00 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.loginTest" duration-ms="323" status="PASS">
+        <test-method signature="dashboardTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:48 IST" name="dashboardTest" finished-at="2024-02-10T23:35:48 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.loginTest" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:46:00 IST" name="sleep" finished-at="2024-02-10T19:46:05 IST" duration-ms="5013" status="PASS">
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:48 IST" name="sleep" finished-at="2024-02-10T23:35:53 IST" duration-ms="5016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sleep -->
-        <test-method signature="logoutTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:46:05 IST" name="logoutTest" finished-at="2024-02-10T19:46:06 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.dashboardTest" duration-ms="1594" status="PASS">
+        <test-method signature="logoutTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:53 IST" name="logoutTest" finished-at="2024-02-10T23:35:54 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.dashboardTest" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutTest -->
-        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:46:06 IST" name="sleep" finished-at="2024-02-10T19:46:11 IST" duration-ms="5004" status="PASS">
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:54 IST" name="sleep" finished-at="2024-02-10T23:35:59 IST" duration-ms="5010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sleep -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T19:46:11 IST" name="quitDriver" finished-at="2024-02-10T19:46:12 IST" duration-ms="1152" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5824a83d]" started-at="2024-02-10T23:35:59 IST" name="quitDriver" finished-at="2024-02-10T23:35:59 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.atharvahiwase07.tests.vendorPortal.VendorPortalTest -->
     </test> <!-- user-mike -->
+    <test started-at="2024-02-10T23:35:59 IST" name="user-john" finished-at="2024-02-10T23:36:17 IST" duration-ms="18386">
+      <class name="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest">
+        <test-method is-config="true" signature="setUpConfig()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:35:19 IST" name="setUpConfig" finished-at="2024-02-10T23:35:19 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpConfig -->
+        <test-method is-config="true" signature="setDriver(org.testng.ITestContext)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:35:59 IST" name="setDriver" finished-at="2024-02-10T23:36:00 IST" duration-ms="958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5c80cf32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDriver -->
+        <test-method is-config="true" signature="setPageObjects(java.lang.String)[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:00 IST" name="setPageObjects" finished-at="2024-02-10T23:36:00 IST" depends-on-methods="com.atharvahiwase07.tests.AbstractTest.setDriver" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test-data/vendor-portal/john.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPageObjects -->
+        <test-method signature="loginTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:00 IST" name="loginTest" finished-at="2024-02-10T23:36:01 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:01 IST" name="sleep" finished-at="2024-02-10T23:36:06 IST" duration-ms="5007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="dashboardTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:06 IST" name="dashboardTest" finished-at="2024-02-10T23:36:06 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.loginTest" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:06 IST" name="sleep" finished-at="2024-02-10T23:36:11 IST" duration-ms="5009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method signature="logoutTest()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:11 IST" name="logoutTest" finished-at="2024-02-10T23:36:12 IST" depends-on-methods="com.atharvahiwase07.tests.vendorPortal.VendorPortalTest.dashboardTest" duration-ms="1061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="sleep()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:12 IST" name="sleep" finished-at="2024-02-10T23:36:17 IST" duration-ms="5008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sleep -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.atharvahiwase07.tests.vendorPortal.VendorPortalTest@5677323c]" started-at="2024-02-10T23:36:17 IST" name="quitDriver" finished-at="2024-02-10T23:36:17 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.atharvahiwase07.tests.vendorPortal.VendorPortalTest -->
+    </test> <!-- user-john -->
   </suite> <!-- vendor-portal -->
 </testng-results>
