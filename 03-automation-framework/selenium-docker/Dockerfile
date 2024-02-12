@@ -18,5 +18,11 @@ ADD runner.sh      runner.sh
 # 4. We can also create a container and directly execute the test cases. just save the yaml file and hit the command 
 # docker-compose up. 
 
+# Test results ar einside the container
+# We can get the test results to the machine by doing volume mapping
+
+# Hub takes time to connect. So script fails immediately.
+# We created a "runner" script which checks the grid "readiness". Then run the tests!
+
 # Run the command to initiate the tests
 ENTRYPOINT sh runner.sh
