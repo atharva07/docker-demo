@@ -1,0 +1,31 @@
+pipeline {
+    /* insert Declarative Pipeline here */
+    agent any
+
+    environment {
+        NUMBER = 3
+    }
+
+    stages {
+        stage('stage-1') {
+            steps {
+                bat "docker run -e NUMBER=${NUMBER} atharvahiwase7/squares"
+            }
+        }
+
+        stage('stage-2') {
+            environment {
+                NUMBER = 6
+            }
+            steps {
+                bat "docker run -e NUMBER=${NUMBER} atharvahiwase7/squares"
+            }
+        }
+    }
+
+    post {
+        always {
+            bat "docker system prune -f"
+        }
+    }
+}

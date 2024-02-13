@@ -24,8 +24,7 @@
     stages {
         stage(&apos;stage-1&apos;) {
             steps {
-                echo &quot;doing mvn clean&quot;
-                echo &quot;NUMBER = ${NUMBER}&quot;
+                bat &quot;docker run -e NUMBER=${NUMBER} atharvahiwase7/squares&quot;
             }
         }
 
@@ -34,15 +33,14 @@
                 NUMBER = 6
             }
             steps {
-                echo &quot;building docker image&quot;
-                echo &quot;NUMBER = ${NUMBER}&quot;
+                bat &quot;docker run -e NUMBER=${NUMBER} atharvahiwase7/squares&quot;
             }
         }
     }
 
     post {
         always {
-            echo &quot;doing clean up&quot;
+            bat &quot;docker system prune -f&quot;
         }
     }
 }</script>

@@ -1,0 +1,110 @@
+Feb 13, 2024 3:52:26 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: NODE1
+Feb 13, 2024 3:52:26 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3160.vd76b_9ddd10cc
+Feb 13, 2024 3:52:26 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using D:\docker-udemy\workspace\03-automation-framework\09-jenkins-ci-cd\jenkins\volumes\node\remoting as a remoting work directory
+Feb 13, 2024 3:52:26 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/]
+Feb 13, 2024 3:52:27 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Feb 13, 2024 3:52:27 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    50000
+  Identity:      1a:cc:1d:37:ac:45:6d:8f:87:88:cb:6b:6c:61:2b:6d
+Feb 13, 2024 3:52:27 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Feb 13, 2024 3:52:27 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:50000
+Feb 13, 2024 3:52:27 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Feb 13, 2024 3:52:27 PM org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader run
+INFO: Waiting for ProtocolStack to start.
+Feb 13, 2024 3:52:28 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 1a:cc:1d:37:ac:45:6d:8f:87:88:cb:6b:6c:61:2b:6d
+Feb 13, 2024 3:52:28 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+Feb 13, 2024 6:28:00 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Terminated
+Feb 13, 2024 6:28:10 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:28:20 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:28:30 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:28:41 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:28:51 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:29:01 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:29:11 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:29:21 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.ConnectException Connection refused: no further information
+Feb 13, 2024 6:29:31 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again
+java.net.SocketException: Unexpected end of file from server
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:955)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:762)
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:952)
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:762)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1688)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529)
+	at org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver.waitForReady(JnlpAgentEndpointResolver.java:402)
+	at hudson.remoting.Engine.innerRun(Engine.java:874)
+	at hudson.remoting.Engine.run(Engine.java:543)
+
+Feb 13, 2024 6:29:46 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Failed to connect to the controller. Will try again: java.net.SocketTimeoutException Read timed out
+Feb 13, 2024 6:30:00 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:30:10 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:30:20 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:30:30 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:30:40 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:30:50 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:31:00 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:31:10 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:31:20 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:31:30 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:31:40 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:31:52 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver waitForReady
+INFO: Controller isn't ready to talk to us on http://localhost:8080/tcpSlaveAgentListener/. Will try again: response code=503
+Feb 13, 2024 6:32:02 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Performing onReconnect operation.
+Feb 13, 2024 6:32:02 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: onReconnect operation completed.
+Feb 13, 2024 6:32:02 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://localhost:8080/]
+Feb 13, 2024 6:32:02 PM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Feb 13, 2024 6:32:02 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: localhost
+  Agent port:    50000
+  Identity:      1a:cc:1d:37:ac:45:6d:8f:87:88:cb:6b:6c:61:2b:6d
+Feb 13, 2024 6:32:02 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Feb 13, 2024 6:32:02 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to localhost:50000
+Feb 13, 2024 6:32:02 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Feb 13, 2024 6:32:02 PM org.jenkinsci.remoting.protocol.impl.BIONetworkLayer$Reader run
+INFO: Waiting for ProtocolStack to start.
+Feb 13, 2024 6:32:04 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 1a:cc:1d:37:ac:45:6d:8f:87:88:cb:6b:6c:61:2b:6d
+Feb 13, 2024 6:32:04 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
