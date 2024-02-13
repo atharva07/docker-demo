@@ -1,0 +1,15 @@
+Started by user [8mha:////4BCHXrnGk1igGZ2QS/t/iLWOItnARWH6HALdLb6gTduAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building remotely on [8mha:////4BPPrm1FrCdGmfCidNo+791EYBV8NdmhcA6r+VnW4bQZAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQifT9/F1dDAHjR2ovEAAAA[0mNODE1 in workspace D:\docker-udemy\workspace\03-automation-framework\09-jenkins-ci-cd\jenkins\volumes\node\workspace\DOCKER_TEST
+[DOCKER_TEST] $ cmd /c call C:\Users\ATHAR\AppData\Local\Temp\jenkins923110312113892638.bat
+
+D:\docker-udemy\workspace\03-automation-framework\09-jenkins-ci-cd\jenkins\volumes\node\workspace\DOCKER_TEST>docker ps 
+CONTAINER ID   IMAGE                                  COMMAND                  CREATED        STATUS        PORTS                                              NAMES
+9e73646a0a61   jenkins/jenkins:lts                    "/usr/bin/tini -- /u…"   14 hours ago   Up 14 hours   0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   jenkins-jenkins-1
+f0ef3af7569f   selenium/node-chrome:4.17.0-20240123   "/opt/bin/entry_poin…"   18 hours ago   Up 18 hours   5900/tcp                                           08-scale-browser-chrome-2
+856b9411f895   selenium/node-firefox:4.16             "/opt/bin/entry_poin…"   18 hours ago   Up 18 hours   5900/tcp                                           08-scale-browser-firefox-1
+030bd2b62d97   selenium/node-chrome:4.17.0-20240123   "/opt/bin/entry_poin…"   18 hours ago   Up 18 hours   5900/tcp                                           08-scale-browser-chrome-1
+e66fccf01c31   selenium/hub:4.16                      "/opt/bin/entry_poin…"   18 hours ago   Up 18 hours   4442-4444/tcp                                      08-scale-browser-hub-1
+
+D:\docker-udemy\workspace\03-automation-framework\09-jenkins-ci-cd\jenkins\volumes\node\workspace\DOCKER_TEST>exit 0 
+Finished: SUCCESS

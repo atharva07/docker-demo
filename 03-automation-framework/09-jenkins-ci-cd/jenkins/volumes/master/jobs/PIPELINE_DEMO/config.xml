@@ -1,0 +1,53 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1385.vb_58b_86ea_fff1">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2175.v76a_fff0a_2618"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2175.v76a_fff0a_2618">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3853.vb_a_490d892963">
+    <script>pipeline {
+    /* insert Declarative Pipeline here */
+    agent any
+
+    environment {
+        NUMBER = 3
+    }
+
+    stages {
+        stage(&apos;stage-1&apos;) {
+            steps {
+                echo &quot;doing mvn clean&quot;
+                echo &quot;NUMBER = ${NUMBER}&quot;
+            }
+        }
+
+        stage(&apos;stage-2&apos;) {
+            environment {
+                NUMBER = 6
+            }
+            steps {
+                echo &quot;building docker image&quot;
+                echo &quot;NUMBER = ${NUMBER}&quot;
+            }
+        }
+    }
+
+    post {
+        always {
+            echo &quot;doing clean up&quot;
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
