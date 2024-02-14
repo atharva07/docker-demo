@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build Jar') {
             steps {
-                dir('D:/docker-udemy/workspace/03-automation-framework/selenium-docker/pom.xml') {
+                dir('./volumes/node/workspace/SELENIUM_DOCKER_BUILDER/03-automation-framework/selenium-docker/pom.xml') {
                     bat "mvn clean package -DskipTests"
                 }
             }
