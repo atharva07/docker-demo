@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build Jar') {
             steps {
-                dir('.workspace/volumes/node/workspace/SELENIUM_DOCKER_BUILDER/03-automation-framework/selenium-docker') {
+                dir('./workspace/volumes/node/workspace/SELENIUM_DOCKER_BUILDER/03-automation-framework/selenium-docker') {
                     bat "mvn clean package -DskipTests"
                 }
             }
