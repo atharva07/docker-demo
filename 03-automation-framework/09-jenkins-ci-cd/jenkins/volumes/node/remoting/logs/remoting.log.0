@@ -108,3 +108,30 @@ Feb 13, 2024 6:32:04 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Remote identity confirmed: 1a:cc:1d:37:ac:45:6d:8f:87:88:cb:6b:6c:61:2b:6d
 Feb 13, 2024 6:32:04 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Connected
+Feb 14, 2024 5:15:19 PM org.jvnet.winp.Native loadByUrl
+WARNING: Failed to load DLL from static location
+java.lang.UnsatisfiedLinkError: Native Library D:\docker-udemy\workspace\03-automation-framework\09-jenkins-ci-cd\jenkins\volumes\node\remoting\jarCache\ED\winp.x64.BFFE30B3B50581290B1866EF8D48C609.dll already loaded in another classloader
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:201)
+	at java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:174)
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2389)
+	at java.base/java.lang.Runtime.load0(Runtime.java:755)
+	at java.base/java.lang.System.load(System.java:1957)
+	at org.jvnet.winp.Native.loadDll(Native.java:253)
+	at org.jvnet.winp.Native.loadByUrl(Native.java:173)
+	at org.jvnet.winp.Native.load(Native.java:135)
+	at org.jvnet.winp.Native.<clinit>(Native.java:102)
+	at org.jvnet.winp.WinProcess.enableDebugPrivilege(WinProcess.java:230)
+	at hudson.util.ProcessTree$Windows.<clinit>(ProcessTree.java:725)
+	at hudson.util.ProcessTree.get(ProcessTree.java:462)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1165)
+	at hudson.Launcher$RemoteLauncher$KillTask.call(Launcher.java:1155)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:377)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:125)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+

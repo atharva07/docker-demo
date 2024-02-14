@@ -1,76 +1,24 @@
-Started at Tue Feb 13 13:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 13:05:24 UTC 2024. 46ms
-Started at Tue Feb 13 14:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 14:05:24 UTC 2024. 22ms
-Started at Tue Feb 13 15:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 15:05:25 UTC 2024. 331ms
-Started at Tue Feb 13 16:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 16:05:24 UTC 2024. 18ms
-Started at Tue Feb 13 17:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 17:05:24 UTC 2024. 19ms
-Started at Tue Feb 13 18:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 18:05:24 UTC 2024. 21ms
-Started at Tue Feb 13 19:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 19:05:24 UTC 2024. 15ms
-Started at Tue Feb 13 20:05:24 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Tue Feb 13 20:05:24 UTC 2024. 27ms
-Started at Wed Feb 14 08:40:38 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Wed Feb 14 08:40:38 UTC 2024. 16ms
-Started at Wed Feb 14 09:40:38 UTC 2024
-Processing DOCKER_TEST
-Offering DOCKER_TEST to Project Build Discarder
-Processing PIPELINE_DEMO
-Offering PIPELINE_DEMO to Project Build Discarder
-Finished at Wed Feb 14 09:40:38 UTC 2024. 27ms
-Started at Wed Feb 14 10:40:37 UTC 2024
+Started at Wed Feb 14 13:40:37 UTC 2024
 Processing DOCKER_TEST
 Offering DOCKER_TEST to Project Build Discarder
 Processing PIPELINE_DEMO
 Offering PIPELINE_DEMO to Project Build Discarder
 Processing SELENIUM_DOCKER_BUILDER
 Offering SELENIUM_DOCKER_BUILDER to Project Build Discarder
-Finished at Wed Feb 14 10:40:37 UTC 2024. 9ms
-Started at Wed Feb 14 11:40:37 UTC 2024
+Finished at Wed Feb 14 13:40:37 UTC 2024. 17ms
+Started at Wed Feb 14 14:40:37 UTC 2024
 Processing DOCKER_TEST
 Offering DOCKER_TEST to Project Build Discarder
 Processing PIPELINE_DEMO
 Offering PIPELINE_DEMO to Project Build Discarder
 Processing SELENIUM_DOCKER_BUILDER
 Offering SELENIUM_DOCKER_BUILDER to Project Build Discarder
-Finished at Wed Feb 14 11:40:37 UTC 2024. 8ms
+Finished at Wed Feb 14 14:40:37 UTC 2024. 21ms
+Started at Wed Feb 14 15:40:37 UTC 2024
+Processing DOCKER_TEST
+Offering DOCKER_TEST to Project Build Discarder
+Processing PIPELINE_DEMO
+Offering PIPELINE_DEMO to Project Build Discarder
+Processing SELENIUM_DOCKER_BUILDER
+Offering SELENIUM_DOCKER_BUILDER to Project Build Discarder
+Finished at Wed Feb 14 15:40:37 UTC 2024. 25ms
