@@ -1,9 +1,0 @@
-version: "3"
-services: 
-  nginx:
-    image: nginx
-
-# To run this configuration, hit the following command
-# docker-compose -f nginx.yaml up
-# To shut down this configuration file, hit the following command
-# docker-compose -f nginx.yaml down

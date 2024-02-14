@@ -1,9 +1,0 @@
-version: "3"
-services: 
-  demo:
-    image: atharvahiwase7/sel-app:${VERSION:-v1}
-    ports:
-    - ${PORT}:80
-
-# To run any environment all we need to do is hit the following command.
-# docker-compose --env-file dev.env up
