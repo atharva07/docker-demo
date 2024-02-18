@@ -1,0 +1,41 @@
+pipeline {
+    /* insert Declarative Pipeline here */
+    agent none
+
+    stages {
+        stage('Build Jar') {
+            agent {
+                docker {
+                    image 'maven:3.9.6-eclipse-temurin-8-focal'
+                }
+            }
+            steps {
+                    bat "mvn clean package -DskipTests"
+                }
+            }
+
+        stage('Build Image') {
+            steps {
+                script {
+                    app = docker.build('atharvahiwase7/dockerselenium')
+                }
+            }
+        }
+
+        stage('Push Image') {
+            steps {
+                script {
+                    docker.withRegistry('', 'dockerhub-credentials') {
+                        app.push("latest")
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            bat "docker logout"
+        }
+    }
+}
